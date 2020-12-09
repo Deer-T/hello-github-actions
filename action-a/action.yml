@@ -1,13 +1,17 @@
-名称：“你好行动”
-描述：“格里特某人”
-作者：“octocat@github.com”
+name: "Hello Actions"
+description: "Greet someone"
+author: "octocat@github.com"
 
-输入：MY_NAME：描述：“问候谁”
-    必填：正确
-    默认：“世界”
+inputs:
+  MY_NAME:
+    description: "Who to greet"
+    required: true
+    default: "World"
 
-运行：使用：“码头”
-  图像：“Dockerfile”
+runs:
+  using: "docker"
+  image: "Dockerfile"
 
-品牌：图标：“麦克风”
-  颜色：“紫色”
+branding:
+  icon: "mic"
+  color: "purple"
